@@ -1,7 +1,37 @@
 01\_explore-libraries\_jenny.R
 ================
 joel
-Wed Jan 31 17:07:49 2018
+Wed Jan 31 17:40:29 2018
+
+``` r
+library(fs)
+library(here)
+```
+
+    ## here() starts at /Users/joel/github/explore-libraries/day1_s2_copy-files
+
+``` r
+library(tidyverse)
+```
+
+    ## Warning: package 'tidyverse' was built under R version 3.4.2
+
+    ## ── Attaching packages ────────────────────── tidyverse 1.2.1 ──
+
+    ## ✔ ggplot2 2.2.1     ✔ purrr   0.2.4
+    ## ✔ tibble  1.3.4     ✔ dplyr   0.7.4
+    ## ✔ tidyr   0.7.2     ✔ stringr 1.2.0
+    ## ✔ readr   1.1.1     ✔ forcats 0.2.0
+
+    ## Warning: package 'tidyr' was built under R version 3.4.2
+
+    ## Warning: package 'purrr' was built under R version 3.4.2
+
+    ## Warning: package 'dplyr' was built under R version 3.4.2
+
+    ## ── Conflicts ───────────────────────── tidyverse_conflicts() ──
+    ## ✖ dplyr::filter() masks stats::filter()
+    ## ✖ dplyr::lag()    masks stats::lag()
 
 ``` r
 ## how jenny might do this in a first exploration
@@ -26,37 +56,12 @@ Which libraries does R search for
     ## [1] "/Library/Frameworks/R.framework/Resources/library"
 
 ``` r
-library(fs)
 path_real(.Library)
 ```
 
     ## /Library/Frameworks/R.framework/Versions/3.4/Resources/library
 
-Installed
-    packages
-
-``` r
-library(tidyverse)
-```
-
-    ## Warning: package 'tidyverse' was built under R version 3.4.2
-
-    ## ── Attaching packages ────────────────────────────────────── tidyverse 1.2.1 ──
-
-    ## ✔ ggplot2 2.2.1     ✔ purrr   0.2.4
-    ## ✔ tibble  1.3.4     ✔ dplyr   0.7.4
-    ## ✔ tidyr   0.7.2     ✔ stringr 1.2.0
-    ## ✔ readr   1.1.1     ✔ forcats 0.2.0
-
-    ## Warning: package 'tidyr' was built under R version 3.4.2
-
-    ## Warning: package 'purrr' was built under R version 3.4.2
-
-    ## Warning: package 'dplyr' was built under R version 3.4.2
-
-    ## ── Conflicts ───────────────────────────────────────── tidyverse_conflicts() ──
-    ## ✖ dplyr::filter() masks stats::filter()
-    ## ✖ dplyr::lag()    masks stats::lag()
+Installed packages
 
 ``` r
 ipt <- installed.packages() %>%
